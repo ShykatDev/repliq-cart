@@ -1,17 +1,21 @@
-import { FaStar, FaRegHeart, FaHeart  } from "react-icons/fa6";
+import { FaStar, FaRegHeart, FaHeart } from "react-icons/fa6";
 import { CiShoppingCart } from "react-icons/ci";
-import CardButton from "./Button";
+import CustomButton from "./Button";
 
 const ProductCard = ({ product }) => {
   const { title, image, category, price, rating } = product;
 
-  console.log(rating)
+  console.log(rating);
   return (
     <div className="px-3 pb-6 ">
       <div className="border-neutral-100">
         <div className="relative">
           <div className="rounded-xl border bg-neutral-100 flex justify-center items-center min-h-[18rem] p-3">
-            <img src={image} alt={title} className="w-full h-[17rem] rounded-md" />
+            <img
+              src={image}
+              alt={title}
+              className="w-full h-[17rem] rounded-md"
+            />
           </div>
         </div>
         <div className="p-3">
@@ -26,7 +30,9 @@ const ProductCard = ({ product }) => {
 
             <div className="flex gap-1 items-center">
               <FaStar className="mb-1 text-amber-400" />
-              <span className="text-textLight">{rating.rate} ({rating.count})</span>
+              <span className="text-textLight">
+                {rating.rate} ({rating.count})
+              </span>
             </div>
           </div>
         </div>
@@ -39,7 +45,7 @@ const ProductCard = ({ product }) => {
               <CiShoppingCart />
             </div>
           </div>
-          <CardButton>Buy Now</CardButton>
+          <CustomButton>Buy Now</CustomButton>
         </div>
       </div>
     </div>
