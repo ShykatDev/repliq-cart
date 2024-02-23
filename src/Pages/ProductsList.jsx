@@ -14,8 +14,6 @@ const ProductsList = () => {
 
       const data = await response.json();
 
-      console.log(data);
-
       setProducts(data);
 
       setLoading(false);
