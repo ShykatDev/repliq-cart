@@ -34,17 +34,17 @@ const ProductsList = () => {
     <div className="container">
       <p className="text-2xl font-semibold mb-3">Popular Products</p>
 
-      <div className="border outline-none overflow-hidden rounded-md flex mb-10 w-fit">
+      <div className="border outline-none overflow-hidden rounded-md flex mb-10 md:w-1/2 lg:w-2/5">
         <input
           type="text"
           placeholder="search"
-          className="w-[400px] p-2 outline-none"
+          className="w-full p-2 outline-none"
         />
         <div className="py-2 px-3 bg-neutral-900 flex items-center">
           <FaSearch className="text-neutral-100" />
         </div>
       </div>
-      <div className=" min-h-screen grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5">
+      <div className=" min-h-screen grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {products.length !== 0 &&
           products.map((product) => {
             return <ProductCard key={product.id} product={product} />;

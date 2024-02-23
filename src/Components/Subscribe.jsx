@@ -1,7 +1,7 @@
 const Subscribe = () => {
   return (
     <div className="container my-10">
-      <div className=" bg-gradient-to-r from-neutral-900 to-neutral-700 rounded-2xl p-16 flex justify-between items-end">
+      <div className=" bg-gradient-to-r from-neutral-900 to-neutral-700 rounded-2xl p-16 flex justify-between md:items-end flex-col md:flex-row gap-10">
         <div className="">
           <h1 className="text-5xl font-semibold text-gray-100">
             Ready to Get <br /> Our New Stuff?
@@ -18,7 +18,7 @@ const Subscribe = () => {
             </button>
           </div>
         </div>
-        <div className="w-[25%]">
+        <div className="md:w-[25%]">
           <h2 className="text-xl text-neutral-100">
             Lorem ipsum dolor sit amet consectetur.
           </h2>

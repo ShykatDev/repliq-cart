@@ -2,7 +2,7 @@ import { FaFacebookF, FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa
 const Footer = () => {
   return (
     <div className="p-10 mt-10">
-      <div className="container flex justify-between items-end">
+      <div className="container flex flex-col md:flex-row justify-between md:items-end gap-10">
         <div className="flex gap-10">
           <div>
             <p className="text-xl font-semibold underline">About</p>
@@ -26,7 +26,7 @@ const Footer = () => {
         <div>
           <p className="text-xl font-semibold underline">Social Media</p>
 
-          <div className="flex gap-3 justify-end mt-3">
+          <div className="flex gap-3 md:justify-end mt-3">
             <FaFacebookF />
             <FaInstagram />
             <FaXTwitter />
