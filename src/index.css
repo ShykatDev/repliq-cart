@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active {
+  @apply font-bold text-indigo-500 underline;
+}

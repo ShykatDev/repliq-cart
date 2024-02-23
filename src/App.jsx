@@ -1,7 +1,15 @@
+import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar";
+import Subscribe from "./Components/Subscribe";
+import { Outlet } from "react-router-dom";
+
 function App() {
   return (
     <>
-      <h1>Intialiazed the pos app</h1>
+      <Navbar />
+      <Outlet />
+      <Subscribe />
+      <Footer />
     </>
   );
 }
