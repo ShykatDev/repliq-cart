@@ -6,6 +6,7 @@ import { FaSearch } from "react-icons/fa";
 const ProductsList = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [searchData, setSearchData] = useState("");
 
   useEffect(() => {
     setLoading(true);
@@ -15,7 +16,6 @@ const ProductsList = () => {
       const data = await response.json();
 
       setProducts(data);
-
       setLoading(false);
     };
 
@@ -37,6 +37,7 @@ const ProductsList = () => {
           type="text"
           placeholder="search"
           className="w-full p-2 outline-none"
+          onChange={(e) => setSearchData(e.target.value)}
         />
         <div className="py-2 px-3 bg-neutral-900 flex items-center">
           <FaSearch className="text-neutral-100" />
@@ -44,9 +45,13 @@ const ProductsList = () => {
       </div>
       <div className=" min-h-screen grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {products.length !== 0 &&
-          products.map((product) => {
-            return <ProductCard key={product.id} product={product} />;
-          })}
+          products
+            .filter((item) =>
+              item.title.toLowerCase().includes(searchData.toLowerCase())
+            )
+            .map((product) => {
+              return <ProductCard key={product.id} product={product} />;
+            })}
       </div>
     </div>
   );
