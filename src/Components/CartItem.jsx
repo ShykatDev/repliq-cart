@@ -7,7 +7,7 @@ const CartItem = ({ cartElement, handleInc, handleDec, setItemToDelete }) => {
   const { deleteConfim, setDeleteConfim } = useContext(CartContext);
 
   return (
-    <div className="mt-6 border p-6 flex justify-between items-center rounded-lg">
+    <div className="mt-6 border p-6 flex flex-col md:flex-row justify-between md:items-center rounded-lg">
       <div className="flex gap-6 items-center">
         <img src={image} alt="" className="w-20 h-20 rounded-lg" />
         <div>
@@ -22,9 +22,11 @@ const CartItem = ({ cartElement, handleInc, handleDec, setItemToDelete }) => {
           </p>
         </div>
       </div>
-      <div className="text-end">
-        <small>Price</small>
-        <p className="font-semibold text-xl">${price * quantity}</p>
+      <div className="md:text-end flex md:flex-col justify-between md:justify-start mt-6 md:mt-0">
+        <div>
+          <small>Price</small>
+          <p className="font-semibold text-xl">${price * quantity}</p>
+        </div>
 
         <div className="flex items-center gap-4 mt-2">
           <span

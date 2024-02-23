@@ -70,8 +70,8 @@ const Cart = () => {
 
         <h2 className="text-5xl font-semibold mb-6">My Cart</h2>
 
-        <div className="flex flex-col-reverse md:flex-row gap-10 items-start">
-          <div className="w-full md:w-[80%]">
+        <div className="flex flex-col-reverse lg:flex-row gap-10 items-start">
+          <div className="w-full lg:w-[80%]">
             <div className="border rounded-xl px-6 py-3 flex justify-between items-center">
               <p className="font-semibold">
                 Total Item:{" "}
@@ -105,7 +105,7 @@ const Cart = () => {
                 })}
             </div>
           </div>
-          <div className="w-full sm:w-1/2 md:w-[20%] border p-3 rounded-lg">
+          <div className="w-full sm:w-1/2 lg:w-[20%] border p-3 rounded-lg">
             <p className="text-xl font-semibold">Summury Order</p>
             <div className="flex justify-between items-center my-3">
               <p>Subtotal:</p>

@@ -9,7 +9,7 @@ const Confirmation = ({ cartElement, handleDel }) => {
   return (
     <div
       className={`fixed z-50  bottom-10 flex justify-center items-center duration-300 ease-out ${
-        deleteConfim.status ? "right-10" : "-right-full"
+        deleteConfim.status ? "right-0 md:right-10 opacity-100 visible" : "-right-full opacity-0 invisible"
       }`}
     >
       <div className="p-6 bg-white rounded-lg shadow-md border">
