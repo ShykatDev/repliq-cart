@@ -10,7 +10,7 @@ const Navbar = () => {
     <div className="h-[10vh] flex items-center">
       <div className="container flex justify-between items-center">
         <h2>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/" className="text-xl">Home</NavLink>
         </h2>
 
         <div className="flex gap-5">
