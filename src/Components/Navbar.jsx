@@ -24,11 +24,27 @@ const Navbar = () => {
             </span>
           </Link>
 
-          <img
-            src="https://avatars.githubusercontent.com/u/124599?v=4"
-            alt="avatar"
-            className="w-10 rounded-full"
-          />
+          <div className="relative group">
+            <img
+              src="https://avatars.githubusercontent.com/u/124599?v=4"
+              alt="avatar"
+              className="w-10 rounded-full cursor-pointer"
+            />
+            <div className="opacity-0 group-hover:opacity-100 duration-300 absolute top-full w-48 text-end right-0  pt-3 ">
+              <div className="border rounded-md p-3 bg-neutral-50">
+                <small className="">
+                  Design and Developed by{" "}
+                  <a
+                    href="https://www.linkedin.com/in/shykat-raha1/"
+                    target="_blank"
+                    className="font-semibold underline"
+                  >
+                    Shykat Raha
+                  </a>
+                </small>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
