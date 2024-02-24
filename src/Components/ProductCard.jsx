@@ -52,7 +52,7 @@ const ProductCard = ({ product }) => {
           </div>
         </div>
         <div className="p-3">
-          <p className="font-semibold">{title}</p>
+          <p className="font-semibold line-clamp-1">{title}</p>
           <p className="text-sm text-textLight">{category}</p>
 
           <div className="flex justify-between items-center mt-3">

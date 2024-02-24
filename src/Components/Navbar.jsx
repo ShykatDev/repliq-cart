@@ -7,7 +7,7 @@ const Navbar = () => {
   const { cartProducts } = useContext(CartContext);
 
   return (
-    <div className="h-[10vh] flex items-center mb-10">
+    <div className="h-[10vh] flex items-center">
       <div className="container flex justify-between items-center">
         <h2>
           <NavLink to="/">Home</NavLink>

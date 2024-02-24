@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .active {
-  @apply font-bold text-indigo-500 underline;
+  @apply font-bold text-neutral-800 underline;
 }
