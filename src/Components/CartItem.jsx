@@ -39,7 +39,7 @@ const CartItem = ({ cartElement, handleInc, handleDec, setItemToDelete }) => {
               setItemToDelete(cartElement);
             }}
           >
-            <FaTrash className="text-neutral-300 duration-300 hover:text-neutral-800 cursor-pointer" />
+            <FaTrash className="text-red-500 duration-300 hover:text-neutral-800 cursor-pointer" />
           </span>
 
           <div className="flex items-center gap-1 bg-neutral-100 border rounded-md">

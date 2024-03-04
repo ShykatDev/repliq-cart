@@ -40,10 +40,10 @@ const ProductCard = ({ product }) => {
   });
 
   return (
-    <div className="px-3 pb-6 ">
+    <div className="border rounded-xl">
       <div className="border-neutral-100">
         <div className="relative">
-          <div className="rounded-xl border bg-neutral-100 flex justify-center items-center min-h-[18rem] p-3">
+          <div className="rounded-tl-xl rounded-tr-xl bg-neutral-100 flex justify-center items-center min-h-[18rem] p-3">
             <img
               src={image}
               alt={title}
@@ -69,7 +69,7 @@ const ProductCard = ({ product }) => {
             </div>
           </div>
         </div>
-        <div className="border rounded-xl p-3 flex justify-between items-center">
+        <div className="border-t rounded-bl-xl rounded-br-xl p-3 flex justify-between items-center">
           <div
             className="p-2 rounded-md bg-white border duration-300 cursor-pointer hover:bg-neutral-900 hover:text-white"
             onClick={handleAddtoCart}

@@ -62,7 +62,7 @@ const ProductsList = () => {
       </div>
       <div
         ref={productsRef}
-        className=" min-h-screen grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
+        className=" min-h-screen grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3"
       >
         {products.length > 0 &&
           filterProducts.slice(page * 10 - 10, page * 10).map((product) => {
